@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        ___/|
+        \o.O| Hello,
+        (___)   
+    -->
+    <head>
+        <title>NAME</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700&subset=latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <style>
+            html, body { 
+                height: 100%;
+                margin: 0;
+            }
+
+            html,
+            body,
+            div,
+            h1,
+            p,
+            a,
+            video {
+              margin: 0;
+              padding: 0;
+            }
+
+            .header-area {
+                z-index: 5;
+                background: url(img/bg_dark1.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+
+                position: relative;
+                height: 100%;
+            }
+            .header-area:before {
+                background: rgba(0, 0, 0, 0.15);
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                content: "";
+            }
+            .header-area-table {
+                display: table;
+                width: 100%;
+                height: 100%;
+            }
+
+            .header-area .header-area-tablecell {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .header-area .header-text {
+                font-family: "Open Sans";
+                text-transform: uppercase;
+                color: #FFF;
+            }
+
+            .header-area .header-text h1 {
+                font-family: Montserrat;
+                margin: 10px 0px;
+                font-size: 50px;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 10px;
+            }
+
+            .header-area .header-text h3 {
+                font-size: 20px;
+                margin: 0;
+                font-weight: 300;
+            }
+
+            .header-area .header-text div {
+                letter-spacing: 2px;
+            }
+
+            .header-area .header-text .name {
+                font-weight: 700;
+            }
+
+            .header-area .header-text .contact {
+                margin-top: 5px;
+            }
+
+            .header-area .header-text .separator {
+                color: #FFF;
+
+                margin: 0;
+
+                margin-left: 6px;
+                margin-right: 6px;
+
+                opacity: 0.4;
+            }
+
+            .header-area .header-text .block-separator {
+                width: 40px;
+                height: 8px;
+                display: block;
+                background-color: #FFF;
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            @media only screen and (max-width: 767px) {
+                .header-area .header-text h1 {
+                    font-size: 30px;
+                    letter-spacing: 3px;
+                }
+            }
+
+            .video {
+                z-index: -2;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                -webkit-transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                      transform: translate(-50%, -50%);
+            }
+            
+        </style>
+    </head>
+    <body>
+    	<!--
+        <video id="video-bg" class="video" muted>
+            <source src="media/mm4.mp4" type="video/mp4" />
+            <source src="media/mm4.webm" type="video/webm" />
+            <img src="img/bg_dark1_compressed.jpg">
+        </video>
+        -->
+        <header id="home" class="header-area">
+            <div class="header-area-table">
+                <div class="header-area-tablecell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="header-text">
+                                    <h3>Helsingborg, Sweden</h3>
+                                    <h1>NAME Consulting AB</h1>
+                                    <div class="block-separator"></div>
+                                    <div class="name">Marcus Malmqvist</div>
+                                    <div class="contact">
+                                        &#109;&#097;&#114;&#099;&#117;&#115;&#064;&#097;&#109;&#101;&#114;&#097;&#099;&#046;&#115;&#101; 
+                                        <span class="separator">|</span>
+                                        +46 721-865 669
+                                        <span class="separator">|</span>
+                                        @mandrwg
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--
+        <script>
+            (function() {
+                var video = document.getElementById("video-bg");
+
+                video.addEventListener( "canplay", function() {
+                    video.play();
+                });
+            })();
+        </script>
+        -->
+    </body>
+</html>

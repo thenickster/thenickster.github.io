@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*.json
+Disallow: /*.pdf
+Disallow: /*.csv
+Disallow: /*.xml
+Disallow: /*.rss
